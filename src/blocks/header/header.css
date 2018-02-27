@@ -47,7 +47,7 @@
 
 .header__search:focus{
     color: #000;
-    background: url("img/search_red.png") no-repeat 17px center / 17px;
+    background: #fff url("img/search_red.png") no-repeat 17px center / 17px;
 }
 
 .header__basket{
@@ -73,12 +73,25 @@
     display: block;
     background-color: transparent;
     color: #ffffff;
-    max-width: 150px;
+    width: 150px;
     background-color: #63a63e;
     padding: 14px 22px 13px 20px;
     text-decoration: none;
 }
 
-.header__link{
-
+@media screen and (max-width:960px){
+    .header__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__logo{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .header__checkout{
+        padding-top: 15px;
+    }
+    .header__logo::after{
+        border-bottom: none;
+    }
 }

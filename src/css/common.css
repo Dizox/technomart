@@ -5,9 +5,10 @@
 body{
     margin: 0px;
     padding: 0px;
+    font-family: "Cuprum";
 }
 
 @font-face {
     src: url("fonts/Cuprum-Regular.ttf");
-    font-family: "Cuprum-Regular";
+    font-family: "Cuprum";
 }
