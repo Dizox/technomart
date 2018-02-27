@@ -1,0 +1,28 @@
+.header{
+    background-color: #293449;
+    width: 100%;
+
+}
+
+.header__wrapper{
+    display: flex;
+    flex-direction: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.header__logo{
+
+}
+.header__search{
+
+}
+.header__bookmarks{
+
+}
+.header__basket{
+
+}
+.header__checkout{
+    
+}
