@@ -76,7 +76,7 @@
 }
 
 @media screen and (max-width: 1060px){
-    .container_top{
+    .container__wrapper_top{
         flex-direction: column;
         align-items: center;
     }

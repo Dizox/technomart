@@ -1,0 +1,28 @@
+.top-nav{
+    background: #f3f7f9;
+    padding-bottom: 60px;
+}
+
+.top-nav__wrapper{
+    max-width: 940px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #32425c;
+}
+
+.top-nav__button{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Cuprum";
+    font-size: 17px;
+    line-height: 17px;
+    padding: 22px 30px 26px 30px;
+}
+
+@media screen and (max-width: 960px){
+    .top-nav__wrapper{
+        flex-direction: column;
+    }
+}
