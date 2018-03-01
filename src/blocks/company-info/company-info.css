@@ -1,0 +1,80 @@
+.company-info{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.company-info__label{
+    font-family: Cuprum;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.company-info__text{
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 13px;
+    padding-top: 26px;
+}
+
+.company-info__transport-list{
+    display: flex;
+    margin-top: 23.5px;
+}
+
+.company-info__line{
+    background: url("img/redLine.png") no-repeat center;
+    margin-right: 10px;
+    width: 25px;
+    height: 20px;
+}
+
+.company-info__transport-name{
+    font-family: Cuprum;
+    font-size: 18px;
+}
+
+.company-info__button-first{
+    background-color: #ee3643;
+    display: block;
+    width: 220px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-top: 37px;
+}
+
+.company-info__button-second{
+    background-color: #ee3643;
+    display: block;
+    width: 300px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.company-info__map{
+    background: url("img/map.png") no-repeat center;
+    margin-top: 36px;
+    width: 300px;
+    height: 158px;
+}
+
+@media screen and (max-width: 800px){
+    .company-info{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .company-info__contacts{
+        padding-top: 30px;
+    }
+    .company-info__map, .company-info__button-second{
+        width: 250px;
+    }
+}

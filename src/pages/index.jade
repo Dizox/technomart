@@ -38,7 +38,7 @@ html(lang="en")
                 +manufacturer-item("img/aeg.png")
                 +manufacturer-item("img/metabo.png")
             .container.container_top-info-blocks
-                .container.container__wrapper-info-blocks
+                .container.container_wrapper-info-blocks
                     .info-block__top-wrapper
                         +info-block("398px","Сервисы","#000000","Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.")
                     .info-block__bottom-wrapper
@@ -48,3 +48,5 @@ html(lang="en")
                             .info-block__menu-button(style="background-color: #32425c; color: #ffffff") Кредит
                         +info-block("275px","Доставка","#3d546e","Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!")
                         .info-block__img
+            .container.container_company-info
+                include ../blocks/company-info/company-info.jade

@@ -6,19 +6,26 @@
     background-color: #f3f7f9;
 }
 
+.container_company-info{
+    padding: 82px 0px 86px 0px;
+    background-color: #fff;
+}
+
 .container_manufacturer-list{
     display: grid;
     grid-gap: 20px;
-    grid-template-rows: repeat(2,145px);
-    grid-template-columns: repeat(4,220px);
+    grid-template-columns: repeat(auto-fill,220px);
     background-color: #ffffff;
     padding-bottom: 85px;
+    justify-content: center;
 }
 
-.container__wrapper-info-blocks{
+.container_wrapper-info-blocks{
     margin: 0px auto;
     padding-top: 28px;
     padding-bottom: 62px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container_goods-list{
@@ -42,17 +49,13 @@
 }
 
 .container_categories{
-    background-color: #ffffff;
-}
-
-.container_categories{
     display: grid;
-    grid-template-rows: repeat(3, 123px);
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(auto-fill, 300px);
     grid-gap: 20px;
     grid-column-start: 2;
     grid-row-start: 2;
     padding: 40px 0px 53px 0px;
+    background-color: #ffffff;
 }
 
 .container__wrapper{
@@ -160,13 +163,11 @@
     }
 }
 
-@media screen and (max-width: 960px){
-    .container__wrapper-info-blocks{
+@media screen and (max-width: 1100px){
+    .container_wrapper-info-blocks{
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 0px;
-        display: flex;
-        flex-direction: column;
         align-items: center;
     }
 }
