@@ -1,0 +1,6 @@
+mixin category(categoryName, buttonName, categoryBackground, buttonBackground, imgSrc, isNew)
+    .category(style="background: "+categoryBackground+" url(img/"+imgSrc+")no-repeat 190px center")
+        .category__name=categoryName
+        a.category__button(href="#" style="background-color:"+buttonBackground+"")=buttonName
+        if (isNew)
+            .category__new

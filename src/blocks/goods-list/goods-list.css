@@ -1,0 +1,55 @@
+.goods-list{
+    max-width: 220px;
+    padding: 6px 19px 21px 17px;
+    background: url("img/backgroundFood.png") no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 318px;
+    position: relative;
+}
+
+.goods-list__prewiew{
+    width: 184px;
+    height: 164px;
+}
+
+.goods-list__name{
+    text-align: center;
+    margin-top: 13px;
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 18px;
+}
+
+.goods-list__oldPrice{
+    margin-top: 18px;
+    color: #999999;
+    font-family: "PT Sans";
+    font-size: 17px;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    height: 19px;
+}
+
+.goods-list__newPrice{
+    background: url("img/priceBackground.png") no-repeat;
+    margin-top: 13px;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 141px;
+}
+
+.goods-list__new{
+    width: 60px;
+    height: 59px;
+    background: url(img/new.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+}

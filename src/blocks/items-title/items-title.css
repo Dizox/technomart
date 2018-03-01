@@ -1,0 +1,31 @@
+.items-title__title{
+    color: #32425c;
+    font-family: "Cuprum";
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+
+.items-title__button{
+    background-color: #ee3643;
+    display: block;
+    width: 253px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+.items-title__button-name{
+    color: #ffffff;
+    font-family: Cuprum;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 650px){
+    .items-title__title{
+        padding-bottom: 8px;
+    }
+}

@@ -1,10 +1,39 @@
+include ../blocks/category/category.jade
+include ../blocks/items-title/items-title.jade
+include ../blocks/goods-list/goods-list.jade
+include ../blocks/manufacturer-item/manufacturer-item.jade
 doctype html
 html(lang="en")
     include ../blocks/head/head.jade
     body
         include ../blocks/header/header.jade
-
+                            
         main
-            include ../blocks/shop-info/shop-info.jade
+            include ../blocks/container/container.jade
             include ../blocks/top-nav/top-nav.jade
+            .container.container_categories
+                +category("Материалы","На любой вкус","#f6b22d","#dda028","search_red.png",true)
+                +category("Инструмент","На все случаи","#4aafde","#439dc8","search_red.png",false)
+                +category("Техника","Для стройки","#cc79d1","#b86dbc","search_red.png",false)
+                include ../blocks/slider/slider.jade
+                +category("Скидки 50%","На 350 товаров","#85d179","#78bc6d","search_red.png",false)
+                +category("Доставка","Бесплатно","#f6b22d","#dda028","search_red.png",false)     
+            .container.container_popular-goods
+                +items-title("Популярные товары","Все популярные товары")
+            .container.container_goods-list
+                +goods-list("img/drel1.png","Перфоратор BOSCH BFG 9000","32500 Р.","25500 Р.",false)
+                +goods-list("img/drel2.png","Перфоратор BOSCH BFG 3000","30500 Р.","15500 Р.",false)
+                +goods-list("img/drel3.png","Перфоратор BOSCH BFG 6000","30500 Р.","25500 Р.",false)
+                +goods-list("img/drel2.png","Перфоратор BOSCH BFG 2000","","12500 Р.",true)
+            .container.container_popular-manufacturer
+                +items-title("Популярные производители", "Все популярные производители")
+            .container.container_manufacturer-list
+                +manufacturer-item("img/bosch.png")
+                +manufacturer-item("img/makita.png")
+                +manufacturer-item("img/dewalt.png")
+                +manufacturer-item("img/interskol.png")
+                +manufacturer-item("img/hitachi.png")
+                +manufacturer-item("img/lg.png")
+                +manufacturer-item("img/aeg.png")
+                +manufacturer-item("img/metabo.png")
         include ../blocks/footer/footer.jade

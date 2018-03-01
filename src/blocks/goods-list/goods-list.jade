@@ -1,0 +1,11 @@
+mixin goods-list(imgSrc, name, oldPrice, newPrice, isNew)
+    .goods-list
+        .goods-list__prewiew(style="background: url("+imgSrc+") no-repeat center")
+        .goods-list__name=name
+        if((oldPrice == newPrice) || (oldPrice == ""))
+            .goods-list__oldPrice(style="visibility: hidden")=oldPrice
+        else
+            .goods-list__oldPrice=oldPrice
+        .goods-list__newPrice=newPrice
+        if(isNew)
+            .goods-list__new

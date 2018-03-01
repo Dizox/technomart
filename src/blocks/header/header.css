@@ -23,6 +23,7 @@
     text-align: center;
     position: relative;
     text-align: center;
+    text-decoration: none;
 }
 
 .header__logo::after{
@@ -32,6 +33,7 @@
     border-bottom: 5px solid #b52933;
     bottom: -4px;
     left: 0%;
+    text-decoration: none;
 }
 
 .header__search{
