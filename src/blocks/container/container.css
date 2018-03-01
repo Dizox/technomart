@@ -70,7 +70,15 @@
 .container_top{
     width: 100%;
     background-color: #f3f7f9;
-        max-width: 100%;
+    max-width: 100%;
+}
+
+.container_top-info-blocks{
+    width: 100%;
+    background-color: #f3f7f9;
+    max-width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .container__info{
@@ -149,5 +157,16 @@
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .container__wrapper-info-blocks{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
