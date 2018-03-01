@@ -15,6 +15,12 @@
     padding-bottom: 85px;
 }
 
+.container__wrapper-info-blocks{
+    margin: 0px auto;
+    padding-top: 28px;
+    padding-bottom: 62px;
+}
+
 .container_goods-list{
     display: flex;
     justify-content: space-between;

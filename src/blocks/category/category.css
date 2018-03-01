@@ -8,21 +8,22 @@
     font-size: 24px;
     padding: 26px 38px 15px 23px;
     color: #ffffff;
-    font-family: Cuprum;
     font-size: 24px;
 }
 
 .category__button{
-    max-width: 135px;
-    padding: 11px 24px;
-    margin: 0px 38px 22px 25px;
-    color: #ffffff;
+    background-color: #ee3643;
+    display: block;
+    width: 135px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-left: 23px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
     font-family: Cuprum;
     font-size: 14px;
     text-transform: uppercase;
-    text-decoration: none;
-    display: block;
-    text-align: center;
 }
 
 .category__new{

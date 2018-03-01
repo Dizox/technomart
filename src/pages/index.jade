@@ -2,6 +2,7 @@ include ../blocks/category/category.jade
 include ../blocks/items-title/items-title.jade
 include ../blocks/goods-list/goods-list.jade
 include ../blocks/manufacturer-item/manufacturer-item.jade
+include ../blocks/info-block/info-block.jade
 doctype html
 html(lang="en")
     include ../blocks/head/head.jade
@@ -36,4 +37,13 @@ html(lang="en")
                 +manufacturer-item("img/lg.png")
                 +manufacturer-item("img/aeg.png")
                 +manufacturer-item("img/metabo.png")
-        include ../blocks/footer/footer.jade
+            .container.container_top
+                .container.container__wrapper-info-blocks
+                    +info-block("398px","Сервисы","#000000","Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.")
+                    .info-block__bottom-wrapper
+                        .info-block__menu
+                            .info-block__menu-button(style="background-color: #ffffff; color: #32425c") Доставка
+                            .info-block__menu-button(style="background-color: #32425c; color: #ffffff") Гарантия
+                            .info-block__menu-button(style="background-color: #32425c; color: #ffffff") Кредит
+                        +info-block("275px","Доставка","#3d546e","Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!")
+                        .info-block__img
