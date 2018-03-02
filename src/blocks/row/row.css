@@ -1,0 +1,25 @@
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row_footer-top{
+    align-items: flex-end;
+    margin-bottom: 32px;
+}
+
+.row_footer-bottom{
+    align-items: flex-start;
+    margin-bottom: 53px;
+}
+
+.row_footer-nav-top{
+    flex-grow: 1;
+    max-width: 547px;
+}
+
+.row_footer-nav-bottom{
+    flex-grow: 1;
+    max-width: 524px;
+}

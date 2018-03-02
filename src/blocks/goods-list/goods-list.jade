@@ -1,8 +1,8 @@
 mixin goods-list(imgSrc, name, oldPrice, newPrice, isNew)
     .goods-list
-        .goods-list__prewiew(style="background: url("+imgSrc+") no-repeat center")
+        .goods-list__prewiew(style="background: url("+imgSrc+") no-repeat center / cover")
         .goods-list__name=name
-        if((oldPrice == newPrice) || (oldPrice == ""))
+        if(oldPrice == "")
             .goods-list__oldPrice(style="visibility: hidden")=oldPrice
         else
             .goods-list__oldPrice=oldPrice

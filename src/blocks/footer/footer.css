@@ -21,12 +21,11 @@
     align-items: center;
 }
 
-.footer__container-top{
+.footer__container{
     display: flex;
-}
-
-.footer__container-bottom{
-    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .footer__logo{
@@ -38,19 +37,6 @@
     font-size: 30px;
     width: 220px;
     height: 68px;
-}
-
-.footer__top-nav{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 173px;
-}
-
-.footer__bottom-nav{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 91px;
 }
 
 .footer__contacts{
@@ -81,7 +67,25 @@
     max-width: 96px;
 }
 
+
+.footer__social{
+    max-width: 132px;
+}
+
+.footer__social-logo{
+    width: 41px;
+    height: 42px;
+}
+
 .footer__link{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Cuprum";
+    font-size: 17px;
+    display: block;
+}
+
+.footer_link-gold{
     color: #ffda96;
     text-decoration: none;
 }

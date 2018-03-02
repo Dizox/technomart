@@ -1,7 +1,6 @@
 .goods-list{
     max-width: 220px;
     padding: 6px 19px 21px 17px;
-    background: url("img/backgroundFood.png") no-repeat;
     display: flex;
     align-items: center;
     flex-direction: column;
