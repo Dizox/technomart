@@ -5,4 +5,24 @@
     font-family: Cuprum;
     font-size: 14px;
     text-transform: uppercase;
+    border: none;
+}
+
+.button_service{
+    padding: 20px 0px 22px 22px;
+    font-size: 21px;
+    width: 240px;
+    margin-right: 80px;
+    background-color: #32425c;
+    text-align: left;
+}
+
+.button_service-active{
+    padding: 20px 0px 22px 22px;
+    font-size: 21px;
+    width: 240px;
+    margin-right: 80px;
+    background-color: #ffffff;
+    color: #32425c;
+    text-align: left;
 }

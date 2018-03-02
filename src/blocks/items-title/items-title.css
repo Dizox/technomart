@@ -6,17 +6,6 @@
     padding-top: 8px;
 }
 
-.items-title__button{
-    background-color: #ee3643;
-    display: block;
-    width: 253px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    text-decoration: none;
-    color: #ffffff;
-    text-align: center;
-}
-
 .items-title__button-name{
     color: #ffffff;
     font-family: Cuprum;

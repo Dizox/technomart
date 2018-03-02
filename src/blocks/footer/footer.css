@@ -15,10 +15,10 @@
 .footer__wrapper-bottom{
     max-width: 940px;
     margin: 0 auto;
-    height: 107px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 35px;
 }
 
 .footer__container{
@@ -31,12 +31,11 @@
 .footer__logo{
     background-color: #ee3643;
     text-align: center;
-    padding: 21px 41px 26px 41px;
+    padding: 17px 41px 17px 41px;
     color: #ffffff;
     font-family: Cuprum;
     font-size: 30px;
     width: 220px;
-    height: 68px;
 }
 
 .footer__contacts{
@@ -75,17 +74,4 @@
 .footer__social-logo{
     width: 41px;
     height: 42px;
-}
-
-.footer__link{
-    text-decoration: none;
-    color: #ffffff;
-    font-family: "Cuprum";
-    font-size: 17px;
-    display: block;
-}
-
-.footer_link-gold{
-    color: #ffda96;
-    text-decoration: none;
 }

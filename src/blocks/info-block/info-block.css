@@ -18,12 +18,8 @@
     padding-top: 74px;
 }
 
-.info-block__menu-button{
-    padding: 20px 0px 22px 22px;
-    font-family: Cuprum;
-    font-size: 21px;
-    width: 240px;
-    margin-right: 80px;
+.info-block__menu{
+    max-width: 320px;
 }
 
 .info-block__img{

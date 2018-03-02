@@ -6,12 +6,12 @@
 
 .row_footer-top{
     align-items: flex-end;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
 }
 
 .row_footer-bottom{
     align-items: flex-start;
-    margin-bottom: 53px;
+    padding-bottom: 53px;
 }
 
 .row_footer-nav-top{

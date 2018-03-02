@@ -35,30 +35,6 @@
     font-size: 18px;
 }
 
-.company-info__button-first{
-    background-color: #ee3643;
-    display: block;
-    width: 220px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    margin-top: 37px;
-}
-
-.company-info__button-second{
-    background-color: #ee3643;
-    display: block;
-    width: 300px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    margin-top: 40px;
-}
-
 .company-info__map{
     background: url("img/map.png") no-repeat center;
     margin-top: 36px;

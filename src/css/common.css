@@ -12,3 +12,7 @@ body{
     src: url("fonts/cuprum_regular.ttf");
     font-family: "Cuprum";
 }
+
+.hidden{
+    display: none;
+}

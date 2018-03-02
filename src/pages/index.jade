@@ -8,7 +8,7 @@ html(lang="en")
     include ../blocks/head/head.jade
     body
         include ../blocks/header/header.jade
-                            
+
         main
             include ../blocks/container/container.jade
             include ../blocks/top-nav/top-nav.jade
@@ -27,7 +27,7 @@ html(lang="en")
                 +goods-list("img/drel3.png","Перфоратор BOSCH BFG 6000","30500 Р.","25500 Р.",false)
                 +goods-list("img/drel2.png","Перфоратор BOSCH BFG 2000","","12500 Р.",true)
             .container.container_popular-manufacturer
-                +items-title("Популярные производители", "Все популярные производители")
+                +items-title("Популярные производители", "Все производители")
             .container.container_manufacturer-list
                 +manufacturer-item("img/bosch.png")
                 +manufacturer-item("img/makita.png")
@@ -43,10 +43,12 @@ html(lang="en")
                         +info-block("398px","Сервисы","#000000","Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.")
                     .info-block__bottom-wrapper
                         .info-block__menu
-                            .info-block__menu-button(style="background-color: #ffffff; color: #32425c") Доставка
-                            .info-block__menu-button(style="background-color: #32425c; color: #ffffff") Гарантия
-                            .info-block__menu-button(style="background-color: #32425c; color: #ffffff") Кредит
-                        +info-block("275px","Доставка","#3d546e","Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!")
+                            button.button.button_service.button_service-active(data-index="0") Доставка
+                            button.button.button_service(data-index="1") Гарантия
+                            button.button.button_service(data-index="2") Кредит
+                        +info-block("275px","Доставка","#3d546e","Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!",0,false)
+                        +info-block("275px","Гарантия","#3d546e","Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!",1,true)
+                        +info-block("275px","Кредит","#3d546e","Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!",2,true)
                         .info-block__img
             .container.container_company-info
                 include ../blocks/company-info/company-info.jade
