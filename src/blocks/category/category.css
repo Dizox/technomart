@@ -12,21 +12,6 @@
     font-size: 24px;
 }
 
-.category__button{
-    background-color: #ee3643;
-    display: block;
-    width: 135px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    margin-left: 23px;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    font-family: Cuprum;
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
 .category__new{
     width: 60px;
     height: 59px;

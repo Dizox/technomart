@@ -27,19 +27,6 @@
     font-size: 18px;
 }
 
-.slider__button{
-    max-width: 195px;
-    padding: 14px 45px 14px 49px;
-    margin: 101px 0px 22px 25px;
-    background-color: #ee3643;
-    color: #ffffff;
-    font-family: Cuprum;
-    font-size: 14px;
-    text-transform: uppercase;
-    display: block;
-    text-decoration: none;
-}
-
 @media (max-width:640px),(max-device-width:640px) {
     .slider{
         height: 123px;

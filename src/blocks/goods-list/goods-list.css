@@ -38,12 +38,13 @@
     font-size: 17px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 13px 10px 13px 36px;
+    padding: 13px 10px 13px 10px;
     display: block;
     background-color: #ee3643;
     text-align: center;
     width: max-content;
     position: relative;
+    width: 120px;
 }
 
 .goods-list__newPrice::after{
@@ -54,7 +55,7 @@
     border-top: 23px solid transparent;
     border-bottom: 22px solid transparent;
     top: -1%;
-    right: -80%;
+    right: -72%;
 }
 
 .goods-list__new{
