@@ -16,3 +16,37 @@ body{
 .hidden{
     display: none;
 }
+
+.owl-nav{
+    position: absolute;
+    top: 38%;
+    width: 100%;
+}
+
+.owl-dots{
+    position: absolute;
+    bottom: 11%;
+    left: 45%;
+}
+
+.owl-prev{
+    width: 22px;
+    height: 40px;
+    left: 3%;
+    position: absolute;
+    background: url(img/leftArrow.png) no-repeat center / cover !important;
+    font-size: 0px !important;
+}
+
+.owl-next{
+    width: 22px;
+    height: 40px;
+    right: 4%;
+    position: absolute;
+    background: url(img/rightArrow.png) no-repeat center / cover !important;
+    font-size: 0px !important;
+}
+
+ .owl-theme .owl-nav{
+    margin: 0px;
+}

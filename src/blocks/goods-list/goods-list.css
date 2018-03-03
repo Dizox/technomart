@@ -32,16 +32,29 @@
 }
 
 .goods-list__newPrice{
-    background: url("img/priceBackground.png") no-repeat;
     margin-top: 13px;
     color: #ffffff;
     font-family: "PT Sans";
     font-size: 17px;
+    font-weight: 700;
     text-transform: uppercase;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 13px 10px 13px 36px;
+    display: block;
+    background-color: #ee3643;
     text-align: center;
-    width: 141px;
+    width: max-content;
+    position: relative;
+}
+
+.goods-list__newPrice::after{
+    position: absolute;
+    content: "";
+    border-left: 24px solid #ee3643;
+    border-right: 62px solid transparent;
+    border-top: 23px solid transparent;
+    border-bottom: 22px solid transparent;
+    top: -1%;
+    right: -80%;
 }
 
 .goods-list__new{

@@ -1,7 +1,7 @@
-
 .slider{
-    grid-row-start: span 2;
-    grid-column-start: span 2;
+    position: relative;
+    grid-row: span 2;
+    grid-column: span 2;
 }
 
 .slider__title{
@@ -10,7 +10,8 @@
 }
 
 .slider__item{
-    background: url("img/sliderBackground.png");
+    background: url(img/sliderBackground.png) no-repeat center / cover;
+    height: 266px;
 }
 
 .slider__name{
@@ -37,4 +38,16 @@
     text-transform: uppercase;
     display: block;
     text-decoration: none;
+}
+
+@media (max-width:640px),(max-device-width:640px) {
+    .slider{
+        height: 123px;
+        grid-row: inherit;
+        grid-column: inherit;
+        background-color: lime;
+    }
+    .slider__item{
+        height: 123px;
+    }
 }

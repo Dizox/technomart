@@ -19,6 +19,7 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 35px;
+    padding-top: 35px;
 }
 
 .footer__container{
@@ -66,7 +67,6 @@
     max-width: 96px;
 }
 
-
 .footer__social{
     max-width: 132px;
 }
@@ -74,4 +74,8 @@
 .footer__social-logo{
     width: 41px;
     height: 42px;
+}
+
+@media screen and (max-width: 970px){
+    
 }

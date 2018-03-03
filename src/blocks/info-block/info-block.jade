@@ -1,4 +1,4 @@
 mixin info-block(blockWidth, title, colorTitle, text, tabindex, isHidden)
     .info-block(style="max-width: "+blockWidth,data-tab=tabindex, class=isHidden ? "hidden" : "")
-        .info-block__title(style="color: "+colorTitse)=title
+        .info-block__title(style="color:"+colorTitle)=title
         .info-block__text=text
