@@ -1,0 +1,21 @@
+include ../blocks/category/category.jade
+include ../blocks/items-title/items-title.jade
+include ../blocks/product/product.jade
+include ../blocks/manufacturer-item/manufacturer-item.jade
+include ../blocks/info-block/info-block.jade
+doctype html
+html(lang="en")
+    include ../blocks/head/head.jade
+    body
+        include ../blocks/header/header.jade
+        main
+            .container.container_top
+                .container__wrapper.container__wrapper_top
+                    .container__info Интернет-магазин строительных материалов и инструментов для ремонта
+                    .container__contacts 
+                        .container__contacts-number +7 (812) 555-05-55
+                        .container__contacts-adress г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                    a.link.link_sign-in(href="#") Войти
+                    a.link.link_sign-up(href="#") Регистрация
+            include ../blocks/top-nav/top-nav.jade
+        include ../blocks/footer/footer.jade

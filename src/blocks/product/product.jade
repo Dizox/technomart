@@ -1,0 +1,11 @@
+mixin product(imgSrc, name, oldPrice, newPrice, isNew)
+    .product
+        .product__prewiew(style="background: url("+imgSrc+") no-repeat center / cover")
+        .product__name=name
+        if(oldPrice == "")
+            .product__oldPrice(style="visibility: hidden")=oldPrice
+        else
+            .product__oldPrice=oldPrice
+        .product__newPrice=newPrice
+        if(isNew)
+            .product__new

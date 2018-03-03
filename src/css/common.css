@@ -47,6 +47,15 @@ body{
     font-size: 0px !important;
 }
 
- .owl-theme .owl-nav{
+.owl-theme .owl-nav{
     margin: 0px;
+}
+
+.owl-dot.active span{
+     border: 2px solid #fff !important;
+     background-color: #ee3643 !important;
+}
+
+.owl-dot span{
+    background-color: #fff !important;
 }

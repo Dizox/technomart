@@ -3,13 +3,12 @@
 }
 
 .footer__bottom{
-    background-color: #33445a;
+    background-color: #293449;
 }
 
 .footer__wrapper-top{
     max-width: 940px;
     margin: 0 auto;
-    height: 193px;
 }
 
 .footer__wrapper-bottom{
@@ -37,6 +36,17 @@
     font-family: Cuprum;
     font-size: 30px;
     width: 220px;
+    position: relative;
+}
+
+.footer__logo::after{
+    content: "";
+    position: absolute;
+    width: 220px;
+    border-bottom: 5px solid #b52933;
+    bottom: -4px;
+    left: 0;
+    text-decoration: none;
 }
 
 .footer__contacts{
@@ -64,7 +74,6 @@
 
 .footer__creator{
     color: #ffffff;
-    max-width: 96px;
 }
 
 .footer__social{
@@ -76,6 +85,12 @@
     height: 42px;
 }
 
-@media screen and (max-width: 970px){
-    
+@media screen and (max-width: 900px){
+    .footer__wrapper-bottom{
+        flex-direction: column;
+    }
+    .footer__wrapper-bottom > div{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }

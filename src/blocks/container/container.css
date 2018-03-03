@@ -28,7 +28,7 @@
     flex-direction: column;
 }
 
-.container_goods-list{
+.container_product-list{
     display: flex;
     justify-content: space-between;
     background-color: #ffffff;
@@ -102,7 +102,7 @@
     font-family: Cuprum;
     font-size: 21px;
     line-height: 18px;
-    background: #fff url("img/phone.png") no-repeat 15px center;
+    background: #fff url("img/phone.png") no-repeat 17px center / 17px;
     margin-bottom: 21px;
     padding: 10px 0px 10px 75px;
 }
@@ -114,27 +114,10 @@
     line-height: 24px;
 }
 
-.container__sign-in{
-    color: #000000;
-    font-family: Cuprum;
-    font-size: 21px;
-    line-height: 18px;
-    width: 121px;
-    padding: 14px 27px 15px 48px;
-    background: #fff url("img/exit.png")  no-repeat 17px center / 17px;
-    text-decoration: none;
-}
-
-.container__sign-up{
-    color: #000000;
-    font-family: Cuprum;
-    font-size: 21px;
-    line-height: 18px;
-    width: 150px;
-    background-color: #fff;
-    text-align: center;
-    padding: 14px 25px 11px 25px;
-    text-decoration: none;
+@media screen and (max-width: 895px){
+    .container_product-list{
+        justify-content: space-around;
+    }
 }
 
 @media screen and (max-width: 1060px){
@@ -142,13 +125,13 @@
         flex-direction: column;
         align-items: center;
     }
-    .container__contacts, .container__sign-in{
+    .container__contacts, .link_sign-in{
         margin-top: 15px;
         margin-bottom: 15px;
     }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 690px){
     .container_popular-goods, .container_popular-manufacturer{
         flex-direction: column;
         align-items: center;

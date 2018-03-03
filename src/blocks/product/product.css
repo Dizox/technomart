@@ -1,4 +1,4 @@
-.goods-list{
+.product{
     max-width: 220px;
     padding: 6px 19px 21px 17px;
     display: flex;
@@ -8,12 +8,12 @@
     position: relative;
 }
 
-.goods-list__prewiew{
+.product__prewiew{
     width: 184px;
     height: 164px;
 }
 
-.goods-list__name{
+.product__name{
     text-align: center;
     margin-top: 13px;
     color: #000000;
@@ -21,7 +21,7 @@
     font-size: 18px;
 }
 
-.goods-list__oldPrice{
+.product__oldPrice{
     margin-top: 18px;
     color: #999999;
     font-family: "PT Sans";
@@ -31,7 +31,7 @@
     height: 19px;
 }
 
-.goods-list__newPrice{
+.product__newPrice{
     margin-top: 13px;
     color: #ffffff;
     font-family: "PT Sans";
@@ -47,18 +47,18 @@
     width: 120px;
 }
 
-.goods-list__newPrice::after{
+.product__newPrice::after{
     position: absolute;
     content: "";
     border-left: 24px solid #ee3643;
-    border-right: 62px solid transparent;
+    border-right: 0px solid transparent;
     border-top: 23px solid transparent;
     border-bottom: 22px solid transparent;
     top: -1%;
-    right: -72%;
+    right: -20%;
 }
 
-.goods-list__new{
+.product__new{
     width: 60px;
     height: 59px;
     background: url(img/new.png);
