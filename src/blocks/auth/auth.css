@@ -1,0 +1,35 @@
+.auth__account{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 10px 14px 13px;
+    margin-bottom: 10px;
+}
+
+.auth__name{
+    flex-grow: 1;
+    background: url("img/-icon-user.png") no-repeat;
+    color: #000000;
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-left: 34px;
+}
+
+.auth__exit{
+    background: url("img/-icon-logout.png");
+    width: 21px;
+    height: 17px;
+    margin-left: 30px;
+}
+
+.auth__order{
+    padding-left: 17px;
+    padding-right: 30px;
+    color: #32425c;
+}
+
+.auth__cabinet{
+    color: #32425c;
+}

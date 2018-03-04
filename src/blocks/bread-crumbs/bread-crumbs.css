@@ -1,0 +1,27 @@
+.bread-crumbs{
+    display: flex;
+    background-color: #fff;
+}
+
+.bread-crumbs__home{
+    background: url("img/home.png") no-repeat center / cover;
+    width: 15px;
+    height: 12px;
+}
+
+.bread-crumbs__row{
+    background: url("img/row-bread.png") no-repeat center / cover;
+    width: 8px;
+    height: 12px;
+    margin: 0px 16px;
+}
+
+.bread-crumbs__item{
+    color: #000000;
+    font-family: Cuprum;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}

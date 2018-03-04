@@ -52,7 +52,7 @@
 }
 
 .link_nav-button{
-    padding: 23px 0px;
+    padding: 23px;
 }
 
 .link_sign-in{
@@ -142,21 +142,21 @@
     background-color: #5fbb2d;
 }
 
-.link_header-logo:focus{
+.link_header-logo:active{
     background-color: #b32833;
 }
 
-.link_header-bookmarks:focus{
+.link_header-bookmarks:active{
     background: #212a3a url("img/bookmark.png") no-repeat 17px center / 17px;
     background-color: #161d29;
 }
 
-.link_header-busket:focus{
+.link_header-busket:active{
     background: #212a3a url("img/basket.png") no-repeat 17px center / 17px;
     background-color: #161d29;
 }
 
-.link_header-checkout:focus{
+.link_header-checkout:active{
     background-color: #518534;
     color: #7ba265;
 }
@@ -170,12 +170,12 @@
     color: #ee3643;
 }
 
-.link_sign-in:focus{
+.link_sign-in:active{
     background: #ffffff url("img/login.png") no-repeat 17px center / 17px;
     color: #dbdbdb;
 }
 
-.link_sign-up:focus{
+.link_sign-up:active{
     color: #dbdbdb;
 }
 
@@ -183,7 +183,7 @@
     background-color: #293449;
 }
 
-.link_nav-button:focus{
+.link_nav-button:active{
     background-color: #1d2739;
     color: #7f858f;
 }
@@ -204,24 +204,32 @@
     text-decoration: underline;
 }
 
-.row_footer-nav-top > .link:focus{
+.row_footer-nav-top > .link:active{
     text-decoration: none;
     color: #32425c;
 }
 
-.row_footer-nav-bottom > .link_gold:focus{
+.row_footer-nav-bottom > .link_gold:active{
     text-decoration: none;
     color: #998a6e;
 }
 
-.footer__call > .link_gold:focus{
+.footer__call > .link_gold:active{
     text-decoration: none;
     color: #853546;
 }
 
-.footer__creator > .link_gold:focus{
+.footer__creator > .link_gold:active{
     text-decoration: none;
     color: #853546;
+}
+
+.link_slider:hover, .link_red:hover, .link_details:hover, .link_writeMe:hover{
+    background-color: #ca2c37;
+}
+
+.link_slider:active, .link_red:active, .link_details:active, .link_writeMe:active{
+    background-color: #ba2732;
 }
 
 @media screen and (max-width: 960px){
@@ -241,5 +249,14 @@
 @media screen and (max-width: 340px){
     .link_writeMe{
         width:100%
+    }
+}
+
+@media screen and (max-width: 900px){
+    .footer__top .link{
+        padding-bottom: 10px;
+    }
+    .footer__contacts{
+        max-width: 280px;
     }
 }

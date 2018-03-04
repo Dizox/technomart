@@ -62,4 +62,8 @@
         margin-top: 15px;
         margin-bottom: 15px;
     }
+
+    .row_footer-bottom{
+        padding-bottom: 0px;
+    }
 }

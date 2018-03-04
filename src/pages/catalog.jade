@@ -15,7 +15,59 @@ html(lang="en")
                     .container__contacts 
                         .container__contacts-number +7 (812) 555-05-55
                         .container__contacts-adress г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                    a.link.link_sign-in(href="#") Войти
-                    a.link.link_sign-up(href="#") Регистрация
+                    include ../blocks/auth/auth.jade
             include ../blocks/top-nav/top-nav.jade
-        include ../blocks/footer/footer.jade
+            .container.container_white
+                .bread-crumbs
+                    .bread-crumbs__home
+                    .bread-crumbs__row
+                    a.bread-crumbs__item(href="#") Каталог
+                    .bread-crumbs__row
+                    a.bread-crumbs__item(href="#") Инструмент
+                    .bread-crumbs__row
+                    a.bread-crumbs__item(href="#") Перфораторы
+            .container.container_gray.container_goods-list-name
+                .container__title Перфораторы
+            .container.container_white.container__goods-list
+                .list-of-products
+                    .list-of-products__right-column
+                        .list-of-products__text Фильтр:
+                        .list-of-products__price-sort
+                            .list-of-products__title Цена:
+                            .list-of-products__select-price
+                            .list-of-products__choice-price
+                                .list-of-products__price
+                                    input(type="text" value="0")
+                                .list-of-products__ch -
+                                .list-of-products__price
+                                    input(type="text" value="30000")
+                        .list-of-products__manufacturer
+                            .list-of-products__title Производители
+                            div Bosch
+                                input.list-of-products__manufacturer-checkbox(type="checkbox") 
+                            div Интерскол
+                                input.list-of-products__manufacturer-checkbox(type="checkbox")
+                            div Makita
+                                input.list-of-products__manufacturer-checkbox(type="checkbox")
+                            div Dewalt
+                                input.list-of-products__manufacturer-checkbox(type="checkbox")
+                            div Hitachi
+                                input.list-of-products__manufacturer-checkbox(type="checkbox")
+                        .list-of-products__power-supply
+                            .list-of-products__title Питание
+                            div Аккумуляторные
+                                input.list-of-products__power-supply-radio(type="radio" name="power-supply") 
+                            div  Сетевые
+                                input.list-of-products__power-supply-radio(type="radio" name="power-supply") 
+                        button.button.button__list-of-products-show Показать 
+                    .list-of-products__left-column
+                        .list-of-products__select-sort
+                            .list-of-products__select-sort-title Сортировка
+                            button.button.button_select-sort-type По цене
+                            button.button.button_select-sort-type По типу
+                            button.button.button_select-sort-type По функционалу
+                            button.button_select-sort-arrow-up
+                            button.button_select-sort-arrow-down
+                            
+                        //.list-of-products__item-list
+                    
