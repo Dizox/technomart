@@ -13,6 +13,11 @@ body{
     font-family: "Cuprum";
 }
 
+@font-face {
+    src: url("fonts/PT_Sans-Web-Regular.ttf");
+    font-family: "PT Sans";
+}
+
 .hidden{
     display: none;
 }

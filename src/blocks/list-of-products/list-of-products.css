@@ -1,37 +1,39 @@
-.list-of-products{
+.foods{
     display: flex;
 }
 
-.list-of-products__text{
+.foods__text{
     background-color: #f7f3ec;
     max-width: 220px;
     padding: 14px 0px 15px 18px;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
-.list-of-products__price-sort{
+.foods__price-sort{
     max-width: 220px;
     padding-bottom: 25px;
     border-bottom: 1px solid gray;
 }
 
-.list-of-products__title{
+.foods__title{
     color: #000000;
     font-family: "PT Sans";
     font-size: 17px;
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
-    margin-bottom: 21px;
+    margin-bottom: 15px;
 }
 
-.list-of-products__select-price{
+.foods__select-price{
     width: 220px;
     height: 80px;
     background-color: #f7f3ec;
+    margin-top: 21px;
 }
 
-.list-of-products__price{
+.foods__price{
     text-align: center;
     color: #000000;
     font-family: "PT Sans";
@@ -45,43 +47,161 @@
     width: 95px;
 }
 
-.list-of-products__choice-price{
+.foods__choice-price{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 9px;
 }
 
-.list-of-products__manufacturer{
+.foods__manufacturer{
     padding-top: 25px;
+    border-bottom: 1px solid gray;
 }
 
-.list-of-products__manufacturer-checkbox, .list-of-products__power-supply-radio{
-    margin-top: 15px;
+.foods__manufacturer-checkbox, .foods__power-supply-radio{
     margin-bottom: 15px;
 }
 
-.list-of-products__power-supply{
+.foods__power-supply{
     padding-top: 25px;
 }
 
 
-.list-of-products__select-sort{
+.foods__select-sort{
     max-width: 700px;
     background-color: #f7f3ec;
     display: flex;
     margin-bottom: 9px;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.list-of-products__select-sort-title{
+.foods__select-sort-title{
     color: #000000;
     font-family: "PT Sans";
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
-    margin-right: 139px;
+    text-transform: uppercase;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
-.list-of-products__left-column{
+.foods__select-sort-arrows{
+    display: flex;
+    width: 43px;
+    justify-content: space-between;
+}
+
+.foods__right-column{
     margin-left: 12px;
+    width: 100%;
+}
+
+.foods__input-price{
+    border: none;
+    background: none;
+    text-align: center;
+    width: 100%;
+    color: #000000;
+}
+
+.foods__nav{
+    display: flex;
+}
+
+.foods__left-column{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.foods__checkbox{
+    padding-bottom: 15px;
+    padding-left: 35px;
+    position: relative;
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.foods__checkbox input[type=checkbox]{
+    display: none;
+}
+
+.foods__checkbox label:after{
+    content:'';
+    display:block;
+    width:27px;
+    height:23px;
+    position:absolute;
+    top:0;
+    left:0;
+    background: url("img/-icon-check-off.png") no-repeat center / cover;
+}
+
+.foods__checkbox input[type=checkbox]:checked + label:after {
+	width:27px;
+	height:23px;
+	background-color:#63849F;
+    background: url("img/-icon-check-on.png") no-repeat center / cover;
+}
+
+.foods__radio{
+    padding-bottom: 15px;
+    padding-left: 35px;
+    position: relative;
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.foods__radio input[type=radio]{
+    display: none;
+}
+
+.foods__radio label:after{
+    content:'';
+    display:block;
+    width:25px;
+    height:25px;
+    position:absolute;
+    top:0;
+    left:0;
+    background: url("img/-icon-circle.png") no-repeat center / cover;
+}
+
+.foods__radio input[type=radio]:checked + label:after {
+	width:25px;
+	height:25px;
+	background-color:#63849F;
+    background: url("img/-icon-circle-dot.png") no-repeat center / cover;
+}
+
+@media screen and (max-width: 690px){
+    .container_goods-list-name{
+        text-align: center;
+    }
+    .container_title{
+        text-align: center;
+    }
+    .foods{
+        flex-direction: column;
+    }
+    .foods__left-column{
+        margin: 0px auto;
+        padding-bottom: 15px;
+    }
+    .foods__right-column{
+        margin: 0px auto;
+    }
+    .button__foods-show{
+        margin-bottom: 15px;
+    }
 }

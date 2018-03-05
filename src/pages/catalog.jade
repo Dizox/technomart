@@ -28,46 +28,71 @@ html(lang="en")
                     a.bread-crumbs__item(href="#") Перфораторы
             .container.container_gray.container_goods-list-name
                 .container__title Перфораторы
-            .container.container_white.container__goods-list
-                .list-of-products
-                    .list-of-products__right-column
-                        .list-of-products__text Фильтр:
-                        .list-of-products__price-sort
-                            .list-of-products__title Цена:
-                            .list-of-products__select-price
-                            .list-of-products__choice-price
-                                .list-of-products__price
-                                    input(type="text" value="0")
-                                .list-of-products__ch -
-                                .list-of-products__price
-                                    input(type="text" value="30000")
-                        .list-of-products__manufacturer
-                            .list-of-products__title Производители
-                            div Bosch
-                                input.list-of-products__manufacturer-checkbox(type="checkbox") 
-                            div Интерскол
-                                input.list-of-products__manufacturer-checkbox(type="checkbox")
-                            div Makita
-                                input.list-of-products__manufacturer-checkbox(type="checkbox")
-                            div Dewalt
-                                input.list-of-products__manufacturer-checkbox(type="checkbox")
-                            div Hitachi
-                                input.list-of-products__manufacturer-checkbox(type="checkbox")
-                        .list-of-products__power-supply
-                            .list-of-products__title Питание
-                            div Аккумуляторные
-                                input.list-of-products__power-supply-radio(type="radio" name="power-supply") 
-                            div  Сетевые
-                                input.list-of-products__power-supply-radio(type="radio" name="power-supply") 
-                        button.button.button__list-of-products-show Показать 
-                    .list-of-products__left-column
-                        .list-of-products__select-sort
-                            .list-of-products__select-sort-title Сортировка
+            .container.container_white.container_goods-list
+                .foods
+                    .foods__left-column
+                        .foods__text Фильтр:
+                        .foods__price-sort
+                            .foods__title Цена:
+                            .foods__select-price
+                            .foods__choice-price
+                                .foods__price
+                                    input.foods__input-price(type="text" value="0")
+                                .foods__ch -
+                                .foods__price
+                                    input.foods__input-price(type="text" value="30000")
+                        .foods__manufacturer
+                            .foods__title Производители:
+                            .foods__checkbox
+                                input.foods__manufacturer-checkbox(type="checkbox" id="Bosch") 
+                                label(for="Bosch") Bosch
+                            .foods__checkbox
+                                input.foods__manufacturer-checkbox(type="checkbox" id="Interskol")
+                                label(for="Interskol") Интерскол
+                            .foods__checkbox
+                                input.foods__manufacturer-checkbox(type="checkbox" id="Makita")
+                                label(for="Makita") Makita
+                            .foods__checkbox
+                                input.foods__manufacturer-checkbox(type="checkbox" id="Dewalt")
+                                label(for="Dewalt") Dewalt
+                            .foods__checkbox
+                                input.foods__manufacturer-checkbox(type="checkbox" id="Hitachi")
+                                label(for="Hitachi") Hitachi
+                        .foods__power-supply
+                            .foods__title Питание:
+                            .foods__radio
+                                input.foods__power-supply-radio(type="radio" name="power-supply" id="Accumulator") 
+                                label(for="Accumulator") Аккумуляторные
+                            .foods__radio
+                                input.foods__power-supply-radio(type="radio" name="power-supply" id="Network")
+                                label(for="Network") Сетевые
+                        button.button.button__foods-show Показать 
+                    .foods__right-column
+                        .foods__select-sort
+                            .foods__select-sort-title Сортировка:
                             button.button.button_select-sort-type По цене
                             button.button.button_select-sort-type По типу
                             button.button.button_select-sort-type По функционалу
-                            button.button_select-sort-arrow-up
-                            button.button_select-sort-arrow-down
-                            
-                        //.list-of-products__item-list
-                    
+                            .foods__select-sort-arrows
+                                button.button_select-sort-arrow-up
+                                button.button_select-sort-arrow-down
+                        .container.container_product-list
+                            +product("img/drel1.png","Перфоратор BOSCH BFG 9000","32500 Р.","25500 Р.",false)
+                            +product("img/drel1.png","Перфоратор BOSCH BFG 9000","32500 Р.","25500 Р.",false)
+                            +product("img/drel1.png","Перфоратор BOSCH BFG 9000","32500 Р.","25500 Р.",true)
+                            +product("img/drel1.png","Перфоратор BOSCH BFG 9000","32500 Р.","25500 Р.",false)
+                            +product("img/drel1.png","Перфоратор BOSCH BFG 9000","32500 Р.","25500 Р.",true)
+                            +product("img/drel1.png","Перфоратор BOSCH BFG 9000","32500 Р.","25500 Р.",false)
+                            +product("img/drel1.png","Перфоратор BOSCH BFG 9000","32500 Р.","25500 Р.",true)
+                            +product("img/drel1.png","Перфоратор BOSCH BFG 9000","32500 Р.","25500 Р.",false)
+                            +product("img/drel1.png","Перфоратор BOSCH BFG 9000","32500 Р.","25500 Р.",false)   
+                        .foods__nav
+                            button.button.button_nav 1
+                            button.button.button_nav 2
+                            button.button.button_nav 3
+                            button.button.button_nav-next Следующая
+            .container.container_top-info-blocks
+                .container.container_wrapper-info-blocks.container_product-info
+                    .info-block__title Пара слов о перфораторах
+                    .info-block__text Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+            include ../blocks/footer/footer.jade

@@ -6,11 +6,74 @@
     flex-direction: column;
     height: 318px;
     position: relative;
+    border: 2px solid #f3f3f3;
+    margin-top: 15px;
 }
 
-.product__prewiew{
+.product__buy{
+    width: 135px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    border: none;
+    background: #63a63e url("img/basket.png") no-repeat 10px center/17px;
+    text-align: center;
+    font-family: "PT Sans";
+    font-size: 18px;
+    margin-left: 25px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.product__buy:hover{
+    background-color: #5fbb2d;
+    background: #63a63e url("img/basketHover.png") no-repeat 10px center/17px;
+}
+
+.product__buy:active{
+    background-color: #518534;
+}
+
+.product__bookmark{
+    width: 135px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px #63a63e solid;
+    background-color: #fff;
+    text-align: center;
+    color: #000;
+    font-family: "PT Sans";
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+
+.product__bookmark:hover{
+    border: 3px #32425c solid;
+}
+
+.product__bookmark:active{
+    border: 3px #c1c6ce solid;
+}
+
+.product__prewiew, .product__buttons{
     width: 184px;
     height: 164px;
+}
+
+.product:hover .product__prewiew{
+    display: none;
+}
+
+ .product__buy, .product__bookmark, .product__buttons{
+     display: none;
+ }
+
+.product:hover .product__buy, .product:hover .product__bookmark, .product:hover .product__buttons{
+    display: block;
 }
 
 .product__name{

@@ -1,3 +1,29 @@
+.auth__account:hover .auth__name{
+    background: url("img/-icon-user-active.png") no-repeat;
+}
+
+.auth__account:hover .auth__exit{
+    background: url("img/-icon-logout-active.png") no-repeat;
+}
+
+.auth__account:active .auth__name{
+    color: #000000;
+    background: url("img/-icon-user.png") no-repeat;
+}
+
+.auth__account:active .auth__exit{
+    color: #000000;
+    background: url("img/-icon-logout.png") no-repeat;
+}
+
+.auth__order:hover, .auth__cabinet:hover{
+    color: #ef6973;
+}
+
+.auth__order:active, .auth__cabinet:active{
+    color: #ced5db;
+}
+
 .auth__account{
     background-color: #fff;
     display: flex;
@@ -15,6 +41,7 @@
     font-weight: 400;
     line-height: 18px;
     padding-left: 34px;
+    text-decoration: none;
 }
 
 .auth__exit{

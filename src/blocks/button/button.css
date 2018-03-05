@@ -30,11 +30,10 @@
     text-align: left;
 }
 
-.button__list-of-products-show{
+.button__foods-show{
     margin-top: 75px;
-    padding: 15px 39px 14px 39px;
+    padding: 10px 39px 10px 39px;
     border: 1px solid #e5e5e5;
-    background-color: #f7f3ec;
     width: 140px;
     color: #000000;
     font-family: "PT Sans";
@@ -49,14 +48,19 @@
     font-weight: 400;
     line-height: 18px;
     background: none;
-    opacity: 0.3;
+    color: #b3b3b3;
+    border-bottom: 2px dotted red;
+    padding: 0px;
+}
+
+.button_select-sort-type:hover{
     color: #000000;
-    font-family: "PT Sans";
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 18px;
-    margin-left: 66px;
-    margin-right: 46px;
+    border-bottom: 2px solid red;
+}
+
+.button_select-sort-type:focus{
+    color: #ee3643;
+    border: none;
 }
 
 .button_select-sort-arrow-up{
@@ -73,4 +77,35 @@
     height: 10px;
     border: none;
     cursor: pointer;
+}
+
+.button_nav, .button_nav-next{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    margin-right: 10px;
+    color: #000000;
+    background-color: #fff;
+    font-family: "PT Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    border: 2px solid #f3f3f3;
+    border-radius: 5px;
+}
+
+.button_nav-next{
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-right: 0px;
+}
+
+.button_nav:hover, .button_nav-next:hover{
+    background-color: #bfc7cb;
+}
+
+.button_nav:focus, .button_nav-next:focus{
+    background-color: #ee3945;
 }
